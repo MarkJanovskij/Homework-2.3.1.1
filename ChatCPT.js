@@ -20,7 +20,7 @@ console.log(expected);
 const maxPoints = Math.max(...expected);
 console.log(maxPoints)
 
-
+//
 //Функция для проверки на четность числа:
 
 //javascript
