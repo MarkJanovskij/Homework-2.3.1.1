@@ -1,21 +1,22 @@
 class Button {
-    constructor(size,width,height,type,color){
-    this.sizeButton = size;
-    this.widthButton = width;
-    this.heightButtom = height;
-    this.typeButton = type;
-    this.colorButton = color;
-    
-    }
-    button.onClick(){
+    constructor(size, width, heigth, type, color) {
+      this.size = size
+      this.width = width
+      this.heigth = heigth
+      this.type = type
+      this.color = color
+      this.props = [size, width, heigth, type, color]
+    } 
+  
+    onClick() {
         this.props.forEach(prop => console.log(prop))
     }
- 
-
-    let button = new Button("Small", "2 cm", "1 cm", "button", "green");
-    button.onClick((props) => {
-      console.log(props);
-    });
+   }
+  
+  let button = new Button("lg", "30", "40", "submit", "green")
+  
+  button.onClick() 
+  //update
 
 
 
